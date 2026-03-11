@@ -5,6 +5,13 @@
 # Build artifacts
 /target/
 
+# Logs and data
+*.csv
+*.log
+
+# Archives
+*.zip
+
 # IDE
 .vscode/
 .idea/
