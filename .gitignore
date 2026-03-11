@@ -1,17 +1,142 @@
-# Environment variables
+# ============================================
+# 🔐 ENVIRONMENT & SECRETS
+# ============================================
 .env
 .env.*
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+.env.backup
+*.env
 
-# Build artifacts
+# API keys / secrets files
+secrets.json
+secrets.yaml
+secrets.yml
+secrets.toml
+config.secret.*
+*.secret
+*.secret.*
+credentials.json
+credentials.yaml
+service-account*.json
+
+# ============================================
+# 🔑 CRYPTO KEYS & WALLETS
+# ============================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+*.csr
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.gpg
+*.asc
+wallet.json
+wallet.dat
+keystore/
+*.seed
+*.mnemonic
+
+# ============================================
+# 🦀 RUST BUILD ARTIFACTS
+# ============================================
 /target/
+**/*.rs.bk
+*.rlib
+*.rmeta
+*.d
 
-# Logs and data
+# ============================================
+# 📊 DATA, LOGS & DATABASES
+# ============================================
 *.csv
 *.log
+*.log.*
+logs/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sql.dump
+*.dump
+data/
+*.bak
+*.backup
 
-# Archives
+# ============================================
+# 📦 ARCHIVES & BINARIES
+# ============================================
 *.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
 
-# IDE
+# ============================================
+# 💻 IDE & EDITORS
+# ============================================
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+*.iml
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# ============================================
+# 🖥️ OPERATING SYSTEM
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.lnk
+$RECYCLE.BIN/
+
+# ============================================
+# 🐳 DOCKER
+# ============================================
+docker-compose.override.yml
+.docker/
+
+# ============================================
+# 📋 MISC
+# ============================================
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+node_modules/
+*.pid
+*.sock
+core
+*.stackdump
