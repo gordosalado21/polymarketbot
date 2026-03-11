@@ -1,0 +1,40 @@
+[package]
+name = "polymarket_bot_hft"
+version = "0.1.0"
+edition = "2021"
+default-run = "polymarket_bot_hft"
+
+[dependencies]
+# Servidor Web ultra-rápido (reemplaza Flask)
+axum = "0.7.4"
+
+# Runtime asíncrono (El "motor" HFT de Rust)
+tokio = { version = "1.36.0", features = ["full"] }
+
+# Cliente HTTP con connection pooling (reemplaza requests.Session)
+reqwest = { version = "0.11.24", features = ["json", "rustls-tls"] }
+
+# Parseo de JSON ultrarrápido
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+
+ethers = { version = "2.0.14", features = ["rustls", "eip712", "abigen"] }
+
+# Criptografía pura para derivar llaves de Polymarket
+hmac = "0.12.1"
+sha2 = "0.10.8"
+hex = "0.4.3"
+base64 = "0.22.1"
+chrono = "0.4.35"
+
+lazy_static = "1.4.0"
+
+# Logging profesional
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+
+# Carga automática de variables de entorno (.env)
+dotenvy = "0.15.7"
+
+# Logging de trades a CSV (compatible con Excel)
+csv = "1.3"
