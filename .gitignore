@@ -1,0 +1,10 @@
+# Environment variables
+.env
+.env.*
+
+# Build artifacts
+/target/
+
+# IDE
+.vscode/
+.idea/
